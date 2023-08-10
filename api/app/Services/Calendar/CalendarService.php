@@ -38,12 +38,17 @@ class CalendarService
       'event' => 'sometimes',
       'start' => 'required',
       'end'   => 'required',
+      'override' => 'sometimes'
     ]);
 
     if ($validator->fails()) {
       return response([
         'errors' => $validator->errors()->all()
       ], 400);
+    }
+
+    if(isset($request->override)) {
+      CalendarEvent::where('date', $request->date)->delete();
     }
 
     $event = CalendarEvent::create([

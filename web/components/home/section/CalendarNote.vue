@@ -76,6 +76,16 @@
       >
         Add Event
       </div>
+      <div
+        v-if="!open_form && !update_form"
+        :class="[
+          attr['section__bottom-button'],
+          attr['section__bottom-button--cancel']
+        ]"
+        @click=";(open_form = true), (form_data.override = true)"
+      >
+        Override
+      </div>
     </div>
     <!-- Form Create -->
     <div
@@ -239,7 +249,9 @@
               </svg>
             </div>
           </validation-provider>
-          <button :class="attr['section__bottom-button']">Add Event</button>
+          <button :class="attr['section__bottom-button']">
+            {{ form_data.override ? 'Override' : 'Add Event' }}
+          </button>
         </div>
       </validation-observer>
       <div
@@ -438,6 +450,7 @@
       open_form: false,
       update_form: false,
       form_data: {
+        override: false,
         event: '',
         start: '6:AM',
         end: '6:AM',
@@ -485,6 +498,7 @@
             return
           } else {
             let form_data = {
+              override: this.form_data.override,
               event: this.form_data.event,
               start: this.form_data.start,
               end: this.form_data.end,
