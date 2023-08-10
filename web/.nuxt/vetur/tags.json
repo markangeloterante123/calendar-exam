@@ -1,0 +1,32 @@
+{
+  "Compliance": {
+    "description": "Auto imported from components/global/modal/Compliance.vue"
+  },
+  "ContentLoader": {
+    "description": "Auto imported from components/global/modal/ContentLoader.vue"
+  },
+  "Gallery": {
+    "description": "Auto imported from components/global/modal/Gallery.vue"
+  },
+  "Loader": {
+    "description": "Auto imported from components/global/modal/Loader.vue"
+  },
+  "ButtonTemplate": {
+    "description": "Auto imported from components/global/template/ButtonTemplate.vue"
+  },
+  "HeaderTemplate": {
+    "description": "Auto imported from components/global/template/HeaderTemplate.vue"
+  },
+  "ModalTemplate": {
+    "description": "Auto imported from components/global/template/ModalTemplate.vue"
+  },
+  "ValidationTemplate": {
+    "description": "Auto imported from components/global/template/ValidationTemplate.vue"
+  },
+  "ContainerTemplate": {
+    "description": "Auto imported from components/templates/wrapper/ContainerTemplate.vue"
+  },
+  "Pagination": {
+    "description": "Auto imported from components/global/Pagination.vue"
+  }
+}

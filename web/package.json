@@ -1,0 +1,35 @@
+{
+  "name": "calendar",
+  "version": "1.0.0 (pre-alpha)",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/google-fonts": "^3.0.0-0",
+    "@nuxtjs/recaptcha": "^1.1.1",
+    "core-js": "^3.25.3",
+    "crypto-js": "^4.1.1",
+    "moment": "^2.29.4",
+    "nuxt": "^2.15.8",
+    "secure-ls": "^1.2.6",
+    "vee-validate": "^3.4.14",
+    "vue": "^2.7.10",
+    "vue-moment": "^4.1.0",
+    "vue-scrollto": "^2.20.0",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^0.7.1",
+    "nuxt-compress": "^5.0.0",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^4.3.3",
+    "v-click-outside": "^2.1.5"
+  }
+}
